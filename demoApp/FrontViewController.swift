@@ -36,7 +36,6 @@ class FrontViewController: UIViewController {
             if UserDefaults.standard.bool(forKey: kIsLoggedIn) {
                 print("secondViewController is loading ...")
                 performSegue(withIdentifier: "secondViewController", sender: nil)
-                
             }else {
                 performSegue(withIdentifier: "viewController", sender: nil)
             }
